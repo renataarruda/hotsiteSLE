@@ -1,0 +1,46 @@
+<header>
+  <h1>Faça sua matrícula no Sistema Logosófico de Educação</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Entre em contato</h2>
+
+    <form [formGroup]="leadForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="nome">Nome:</label>
+        <input id="nome" formControlName="nome" />
+        <p *ngIf="hasError('nome', 'required')">Nome é obrigatório.</p>
+        <p *ngIf="hasError('nome', 'minlength')">
+          O nome deve ter pelo menos 3 caracteres.
+        </p>
+      </div>
+
+      <div>
+        <label for="email">E-mail:</label>
+        <input id="email" formControlName="email" type="email" />
+        <p *ngIf="hasError('email', 'required')">E-mail é obrigatório.</p>
+        <p *ngIf="hasError('email', 'email')">E-mail inválido.</p>
+      </div>
+
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" formControlName="telefone" />
+        <p *ngIf="hasError('telefone', 'required')">Telefone é obrigatório.</p>
+        <p *ngIf="hasError('telefone', 'pattern')">
+          O telefone deve ter 10 ou 11 dígitos.
+        </p>
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" formControlName="mensagem"></textarea>
+        <p *ngIf="hasError('mensagem', 'maxlength')">
+          A mensagem deve ter no máximo 500 caracteres.
+        </p>
+      </div>
+
+      <button type="submit" [disabled]="leadForm.invalid">Enviar</button>
+    </form>
+  </section>
+</main>
