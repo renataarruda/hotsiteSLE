@@ -4,7 +4,7 @@ Projeto de criação de um hotsite para o Sistema Logosófico de Educação com 
 
 No momento, o projeto encontra-se em fase de desenvolvimento. 
 
-## Protótipo de baixa fidelidade
+## Wireframes 
 <img width="461" alt="Captura de tela 2025-03-19 145455" src="https://github.com/user-attachments/assets/5c25d77a-88b6-4bd4-8c88-f44d587bdcda" />
 
 ## Identidade Visual
