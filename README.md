@@ -18,5 +18,5 @@ No momento, o projeto encontra-se em fase de desenvolvimento.
 
 # Tecnologias utilizadas
 
-Para este projeto, utilizarei Angular e Spring Boot.
+Para este projeto front-end, utilizarei Angular 17.
 
